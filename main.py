@@ -74,5 +74,6 @@ new_date_after = current_date + days100
 print(new_date_after)
 
 with open(file_path, "w") as file:
-    file.write(new_date_previous)
-    file.write(new_date_after)
+    file.write(str(new_date_previous))
+    file.write("\n")
+    file.write(str(new_date_after))
