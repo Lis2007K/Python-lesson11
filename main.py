@@ -53,3 +53,26 @@ print(new_date)
 random_days = datetime.timedelta(days=1453)
 random_date = koha_aktuale - random_days
 print(random_date)
+
+#challenge
+
+current_date = datetime.datetime.now()
+print("Year: ", current_date.year)
+print("Month: ", current_date.month)
+print("Day: ", current_date.day)
+print("Hour: ", current_date.hour)
+print("Minute: ", current_date.minute)
+print("Second: ", current_date.second)
+print("Micorsecond: ", current_date.microsecond)
+
+days100 = datetime.timedelta(days=100)
+
+new_date_previous = current_date - days100
+print(new_date_previous)
+
+new_date_after = current_date + days100
+print(new_date_after)
+
+with open(file_path, "w") as file:
+    file.write(new_date_previous)
+    file.write(new_date_after)
